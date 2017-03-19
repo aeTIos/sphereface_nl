@@ -110,23 +110,39 @@ public:
     return "Over";
   }
   // TODO: please translate:
+  
+  virtual std::string const help_controls() const override {
+    /// Context: help window: block of help text
+    return "BASISBESTURING";
+  }
+  virtual std::string const helptext01() const override {
+    /// Context: help window: block of help text
+    return "Je beweegt het schip door de hoofdmotor af te vuren in de richting die je op wilt vliegen. Je schip remt niet vanzelf: als je niets doet zal je in dezelfde richting blijven bewegen.";
+  }
+  virtual std::string const helptext02() const override {
+    /// Context: help window: block of help text
+    return "Draai het schip om en vuur de motoren in de tegengestelde richting om je schip af te remmen.";
+  }
+  virtual std::string const helptext03() const override {
+    /// Context: help window: block of help text
+    return "Als de camera losgekoppeld is, kun je vrij rondkijken in de bol.";
+  }
+  virtual std::string const helptext04() const override {
+    return "Groene dingen zijn meestal goed - pak die op." "\n\n"
+    "Rode dingen zijn meestal fout - vermijd die.";
+  }
+  virtual std::string const helptext05() const override {
+    return "Witte dingen zijn neutraal, maar probeer botsingen zoveel mogelijk te voorkomen.";
+  }
+  virtual std::string const helptext06() const override {
+    return "Botsingen zijn meestal dodelijk. Het afbraakSCHILD geeft enige bescherming, maar het is beter om hier niet blind op te varen.";
+  }
+  virtual std::string const helptext07() const override {
+    return "Je voortgang in het spel wordt opgeslagen als je afsluit. Ga je echter dood dan wordt het opgeslagen spel verwijderd en begin je opnieuw.";
+  }
+  virtual std::string const helptext08() const override {
+    return "
   /*
-  virtual std::string const helptext1() const override {
-    /// Context: help window: block of help text
-    return "BASIC CONTROLS";
-  }
-  virtual std::string const helptext2() const override {
-    /// Context: help window: block of help text
-    // TODO - please refer to base.h
-  }
-  virtual std::string const helptext3() const override {
-    /// Context: help window: block of help text
-    // TODO - please refer to base.h
-  }
-  virtual std::string const helptext4() const override {
-    /// Context: help window: block of help text
-    // TODO - please refer to base.h
-  }
   virtual std::string const abouttext(std::string const &version, std::string const &git_version, std::string const &compileinfo, std::string const &current_year) const override {
     std::stringstream ss;
     ss << "sphereFACE" "\n"
