@@ -56,7 +56,7 @@ public:
     /// i.e: DEAD x36
     std::stringstream ss;
     ss << "DEAD x" << deathcount;
-    return ss.str();;
+    return ss.str();
   }
   virtual std::string const won() const {
     /// Context: shown when the game is complete
@@ -98,6 +98,10 @@ public:
   virtual std::string const options() const {
     /// Context: menu option: open options / settings menu
     return "Options";
+  }
+  virtual std::string const language() const {
+    /// Context: menu option: language selection menu title
+    return "Language";
   }
   virtual std::string const inventory() const {
     /// Context: menu option: open inventory screen
@@ -738,7 +742,7 @@ public:
     ss << "Cleared " << new_sphere;
     return ss.str();
   }
-  virtual std::string const now_playing(std::string const music_track) const {
+  virtual std::string const now_playing_track(std::string const music_track) const {
     /// Context: announcement, the name of the new music track that's now playing
     std::stringstream ss;
     ss << "Now playing: " << music_track;
