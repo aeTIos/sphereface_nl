@@ -327,7 +327,7 @@ public:
   }
   virtual std::string const training_drag_enable() const override {
     /// Context: options menu: title for setting when to enable the drag that slows down your ship to make it easier for beginners to fly
-    return "Remming in trainingsmodus";
+    return "Afremmen in trainingsmodus";
   }
   virtual std::string const in_first_sphere_only() const override {
     /// Context: options menu: setting for training drag - to enable in first sphere only
@@ -421,7 +421,7 @@ public:
   }
   virtual std::string const weapon_burst_description() const override {
     /// Context: weapon description
-    return "Dit laatste redmiddel loost brandstof en ontsteekt het vervolgens, resulterend in een explosie. Dit secundaire wapen is slechts op relatief korte afstand effectief, maar kan gebruikt worden zonder het primaire wapen te hoeven schakelen. Upgraden verhoogt het bereik en de schade.";
+    return "Dit laatste redmiddel loost brandstof en ontsteekt het vervolgens, resulterend in een explosie. Dit tweede wapen heeft niet zo'n groot bereik, maar kan gebruikt worden zonder het primaire wapen te hoeven schakelen. Upgraden verhoogt het bereik en de schade.";
   }
   virtual std::string const weapon_enemy_launcher_name() const override {
     /// Context: weapon name
@@ -445,7 +445,7 @@ public:
   }
   virtual std::string const weapon_flamethrower_description() const override {
     /// Context: weapon description
-    return "Schiet een brede maar korte stroom van brandend hydrazine vermengd met oxidator. De uitzettende brandstof kan doelen zowel afstoten als beschadigen, en de hoeveelheid schade neemt omgekeerd evenredig toe met de afstand.";
+    return "Schiet een brede maar korte stroom van brandstof en oxidator, resulterend in een vuurstraal. De uitzettende brandstof kan doelen zowel afstoten als beschadigen, en de hoeveelheid schade neemt omgekeerd evenredig toe met de afstand.";
   }
   virtual std::string const weapon_gaussrifle_name() const override {
     /// Context: weapon name
@@ -515,7 +515,7 @@ public:
   }
   virtual std::string const weapon_spreadgun_description() const override {
     /// Context: weapon description
-    return "Een automatisch kanon dat een breedte aan granaten met middelmatige snelheid afvuurt, die blijven rondvliegen tot ze wat raken. Je kunt zowel de hoeveelheid granaten per schot als hun snelheid upgraden.";
+    return "Een automatisch kanon dat een waaier aan granaten met middelmatige snelheid afvuurt, die blijven rondvliegen tot ze wat raken. Je kunt zowel de hoeveelheid granaten per schot als hun snelheid upgraden.";
   }
   virtual std::string const weapon_picked_up(std::string const &name) const override {
     /// Context: announcement of a new weapon being obtained by the player
@@ -673,7 +673,7 @@ public:
     // convert mass to some more interesting looking value
     unsigned int pretty_mass = static_cast<unsigned int>(mass * 1000.0f);
     // let's pretend that converts to yottagrams ;)  The earth weighs about 5974Yg
-    ss << "Puin (mass " << pretty_mass << "Yg)";
+    ss << "Puin (massa " << pretty_mass << "Yg)";
     return ss.str();
   }
   virtual std::string const name_portal(std::string const destination) const override {
@@ -710,7 +710,7 @@ public:
   }
   virtual std::string const description_armour() const override {
     /// Context: powerup description
-    return "Een geharde samenvoeging van rots, puin en metalen, afkomstig van vernietigde asteroiden en hemellichamen, omgevormd tot beschermende pantserplaten. Kan alles behalve de meest krachtige aanvallen weerstaan of terugkaatsen. Dit gaat ten koste van het afbraakSCHILD.";
+    return "Een geharde mix van rots, puin en metalen, afkomstig van vernietigde asteroiden en hemellichamen, omgevormd tot beschermende pantserplaten. Kan alles behalve de meest krachtige aanvallen weerstaan of terugkaatsen. Dit gaat ten koste van het afbraakSCHILD.";
   }
   virtual std::string const armour_status(unsigned int num_armours, unsigned int max_num_armours) const override {
     /// Context: powerup description
@@ -729,7 +729,7 @@ public:
   virtual std::string const armour_picked_up(unsigned int num_armours) const override {
     /// Context: announcement of armour being picked up by the player
     std::stringstream ss;
-    ss << num_armours << "x ablativeARMOUR opgepakt";
+    ss << num_armours << "x afbraakSCHILD opgepakt";
     return ss.str();
   }
   virtual std::string const name_bullet_base() const override {
@@ -810,7 +810,7 @@ public:
   }
   virtual std::string const name_ship_base() const override {
     /// Context: sphere menu, generic ship
-    return "Ship";
+    return "Schip";
   }
   virtual std::string const name_ship_powerup() const override {
     /// Context: sphere menu, powerup - implying it's an escape capsule
@@ -826,7 +826,7 @@ public:
   }
   virtual std::string const description_reverse_thruster() const override {
     /// Context: powerup description
-    return "Een extra paar motoren, zo gemonteerd dat ze achteruit vuren. Geeft extra bewegingsvrijheid zonder het schip om te moeten draaien.";
+    return "Een extra paar motoren, zo gemonteerd dat ze achteruit vuren. Geeft extra bewegingsvrijheid zonder het schip om te hoeven draaien.";
   }
   virtual std::string const name_enemy_base() const override {
     /// Context: sphere menu, generic enemy
@@ -1064,7 +1064,7 @@ public:
   virtual std::string const stats_upgraded(uint_fast64_t number) const override {
     /// Context: statistics menu content
     std::stringstream ss;
-    ss << "Levels geupgraded: " << number;
+    ss << "Levels geupgrade: " << number;
     return ss.str();
   }
   virtual std::string const stats_enemies_destroyed(uint_fast64_t number) const override {
@@ -1169,7 +1169,28 @@ public:
   virtual std::string const ships_log_contact2_title() const override{
     return "IJN Amaterasu Berichtenlogboek";
   }
-
+  virtual std::string const ships_log_contact2_content() const override{
+    return "Schip: IJN Amaretasu" "\n"
+    "Bestandstype: Calamiteitsbericht" "\n"
+    "Ontvangen van: IJN Kirishima" "\n"
+    "Afzender: Kapitein Hikaru Kayden" "\n"
+    "\n"
+    "Ik wilde even laten weten dat ik de geplande route even laat voor wat het is om te reageren op een vreemd bericht dat we doorkregen. We weten zeker dat de afzender een van ons is, maar het bestand was lastig te lezen. Erg groot ook, we konden maar een deel ontvangen voordat we weer buiten bereik waren. Hopelijk kunnen we de rest van het bericht onderweg ontvangen. Voor zover we kunnen zien is het een soort data dump: een heleboel sensorinformatie, energiesystemen, zuurstof, motorstatus, enzovoort. Tot nu toe niet echt iets bijzonders, maar omdat we niet het hele bericht hebben kunnen we dat lastig met zekerheid zeggen. Wel raar dat de gegevens zomaar verstuurd worden; waaarschijnlijk simpelweg een bug, maar met al de piratenactiviteit hier in de buurt de laatste tijd neem ik liever het zekere voor het onzekere, dus ik ga even kijken. Ik laat 't je weten.";
+  }
+  virtual std::string const ships_log_contact3_title() const {
+    return "IJN Sazanami Berichtenlogboek";
+  }
+  virtual std::string const ships_log_contact3_content() const {
+  return "Schip: IJN Sazanami" "\n"
+  "Bestandstype: Calamiteitsbericht" "\n"
+  "Ontvangen van: IJN Kirishima" "\n"
+  "Afzender: Kaptitein Hikaru Kayden" "\n"
+  "\n"
+  "Nadat we onze koers hebben verlegd konden we gelukkig een groot deel van het bericht ontvangen. Ziet er niet zo rooskleurig uit: het lijkt erop dat de communicatieofficier een noodprotocol had ingesteld waardoor in noodgevallen alle data van het schip verstuurd zou worden. Wij hebben dus de sensordata van net voor de noodtransmissie opgepikt, en zijn nu aan het onderzoeken of we een aanwijzing kunnen vinden voor wat er met precies gebeurd is. Tot nu toe lijkt het erop dat ze een wrak van een van onze verdwenen onderzoeksschepen aan het onderzoeken waren. Het schip was in slechte staat, maar het vreemde was dat er blijkbaar helemaal geen organisch materiaal aan boord was. Alles wat ook maar koolstof bevatte was foetsie. Voedselvoorraden, brandstof, zelfs de op koolstof gebaseerde plastics aan boord was verdwenen. Het hoeft niet gezegd te worden dat er van de bemanning geen spoor was. Ik denk dat we onze koers gaan verleggen naar het Sectorcommando; deze zaak moet door een paar militaire schepen worden opgepakt.";
+  }
+  virtual std::string const ships_log_witness1_title() const {
+    
+ 
 };
 
 }
