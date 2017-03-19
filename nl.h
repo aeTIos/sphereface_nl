@@ -1186,10 +1186,19 @@ public:
   "Ontvangen van: IJN Kirishima" "\n"
   "Afzender: Kaptitein Hikaru Kayden" "\n"
   "\n"
-  "Nadat we onze koers hebben verlegd konden we gelukkig een groot deel van het bericht ontvangen. Ziet er niet zo rooskleurig uit: het lijkt erop dat de communicatieofficier een noodprotocol had ingesteld waardoor in noodgevallen alle data van het schip verstuurd zou worden. Wij hebben dus de sensordata van net voor de noodtransmissie opgepikt, en zijn nu aan het onderzoeken of we een aanwijzing kunnen vinden voor wat er met precies gebeurd is. Tot nu toe lijkt het erop dat ze een wrak van een van onze verdwenen onderzoeksschepen aan het onderzoeken waren. Het schip was in slechte staat, maar het vreemde was dat er blijkbaar helemaal geen organisch materiaal aan boord was. Alles wat ook maar koolstof bevatte was foetsie. Voedselvoorraden, brandstof, zelfs de op koolstof gebaseerde plastics aan boord was verdwenen. Het hoeft niet gezegd te worden dat er van de bemanning geen spoor was. Ik denk dat we onze koers gaan verleggen naar het Sectorcommando; deze zaak moet door een paar militaire schepen worden opgepakt.";
+  "Nadat we onze koers hebben verlegd konden we gelukkig een groot deel van het bericht ontvangen. Ziet er niet zo rooskleurig uit: het lijkt erop dat de communicatieofficier een noodprotocol had ingesteld waardoor in noodgevallen alle data van het schip verstuurd zou worden. Wij hebben dus de sensordata van net voor de noodtransmissie opgepikt, en zijn nu aan het onderzoeken of we een aanwijzing kunnen vinden voor wat er met precies gebeurd is. Tot nu toe lijkt het erop dat ze een wrak van een van onze verdwenen onderzoeksschepen aan het onderzoeken waren. Het schip was in slechte staat, maar het vreemde was dat er blijkbaar helemaal geen organisch materiaal aan boord was. Alles wat ook maar koolstof bevatte was foetsie. Voedselvoorraden, brandstof, zelfs de op koolstof gebaseerde plastics aan boord was verdwenen. Het hoeft niet gezegd te worden dat er van de bemanning geen spoor was. Ik denk dat we onze koers gaan verleggen naar het sectorcommando; deze zaak moet door een paar militaire schepen worden opgepakt.";
   }
   virtual std::string const ships_log_witness1_title() const {
-    
+    return "USS Hermes Kapiteinslogboek";
+  }
+  virtual std::string const ships_log_witness1_content() const {
+    return "Schip: USS Hermes" "\n"
+    "Bemanningslid: Kapitein Tracer Harvey" "\n"
+    "Bestandstype: Kapteinslogboek" "\n"
+    "\n"
+    "Hoe rapporteer ik dit precies? Ik geloof dat we zojuist contact hadden met een buitenaardse niet-menselijke leefvorm. In ieder geval bewoog het uit zichzelf. Ook reageerde het beslist op onze aanwezigheid... en we waren niet welkom, mag ik wel zeggen. We waren met onze gebruikelijke patrouille bezig toen 'het', wat het ook moge zijn, opeens achter een asteroide vandaan kwam. Toen we het zagen, was het de asteroide aan het aftasten, maar we kregen al gauw de volle laag  van wat gereedschap of wapens was. Het is een wonder dat we niet geraakt zijn. We gaan nu terug naar het sectorcommando om dit incident te rapporteren.";
+  }
+  
  
 };
 
