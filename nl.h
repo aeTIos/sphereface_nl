@@ -140,71 +140,71 @@ public:
   }
   virtual std::string const helptext01() const override final {
     /// Context: help window: block of help text
-    return "Your ship has momentum.  Orient it in the direction you wish to accelerate, and fire your thrusters.";
+    return "Je beweegt het schip door de hoofdmotor af te vuren in de richting die je op wilt vliegen. Je schip remt niet vanzelf: als je niets doet zal je in dezelfde richting blijven bewegen.";
   }
   virtual std::string const helptext02() const override final {
-    return "To decelerate, turn around and fire your thrusters in the opposite direction.";
+    return "Draai het schip om en vuur de motoren in de tegengestelde richting om je schip af te remmen.";
   }
   virtual std::string const helptext03() const override final {
-    return "When the camera is unlocked, you can look freely around the sphere.";
+    return "Als de camera losgekoppeld is, kun je vrij rondkijken in de bol.";
   }
   virtual std::string const helptext04() const override final {
-    return "Green things are usually good - collect them." "\n\n"
-           "Red things are usually bad - avoid them.";
+    return "Groene dingen zijn meestal goed - pak die op." "\n\n"
+    "Rode dingen zijn meestal fout - vermijd die.";
   }
   virtual std::string const helptext05() const override final {
-    return "White things are neutral, but colliding with them is not generally a good idea.";
+    return "Witte dingen zijn neutraal, maar probeer botsingen zoveel mogelijk te voorkomen.";
   }
   virtual std::string const helptext06() const override final {
-    return "Impacts are usually fatal.  AblativeARMOUR gives some protection, but it is best not to rely on it.";
+    return "Botsingen zijn meestal dodelijk. Het afbraakSCHILD geeft enige bescherming, maar het is beter om hier niet blind op te varen.";
   }
   virtual std::string const helptext07() const override final {
-    return "Your progress is saved when you exit, but your savegame is deleted if you die.";
+    return "Je voortgang in het spel wordt opgeslagen als je afsluit. Ga je echter dood dan wordt het opgeslagen spel verwijderd en begin je opnieuw.";
   }
   virtual std::string const helptext08() const override final {
-    return "The presence of planetary mass inhibits sphereSPACE transport.  Destroy planetary matter to unlock wormholes.";
+    return "Het is niet mogelijk om door de bolRUIMTE te reizen als er nog planetaire massa aanwezig is. Vernietig dit om nieuwe wormgaten te openen.";
   }
   virtual std::string const helptext09() const override final {
-    return "Planetary matter can be fractured and mined.";
+    return "Planetaire massa kan in stukken gebroken en gemijnd worden.";
   }
   virtual std::string const helptext10() const override final {
-    return "The SphereSPACE has varied regions.  Some directions have more planetary mass than others, some attract more red things than others.";
+    return "Er zijn meerdere gebieden in de bolRUIMTE.  In sommige gebieden zul je meer planetaire massa vinden, andere gebieden trekken juist rode dingen aan.";
   }
   virtual std::string const helptext11() const override final {
-    return "Explore the menus - there is advanced information available in the sphere and inventory menus.";
+    return "Verken het menu - je kunt veel informatie vinden in de het Bolmenu en in je Inventaris.";
   }
   virtual std::string const helptext12() const override final {
-    return "Visit the controls menu to see the rest of the available controls, and customise them.";
+    return "Open het menu Besturing om de overige beschikbare besturingselementen te bekijken en aan te passen.";
   }
   virtual std::string const helptext13() const override final {
-    return "You can configure and use any controllers, gamepads, joysticks, or VR interfaces, as well as the keyboard and mouse.";
+    return "Je kunt elk soort controller, gamepad, joystick of VR-bediening instellen, naast natuurlijk toetsenbord en muis.";
   }
   virtual std::string const helptext14() const override final {
-    return "The graphical theme can be customised.  Theme files can be shared online.";
+    return "Je kunt het thema van sphereFACE aanpassen via themabestanden. Themabestanden kun je online vinden en delen.";
   }
   virtual std::string const helptext15() const override final {
-    return "There seems to be something deep below the heart of the sphereSPACE wormhole network.";
+    return "Diep onder het wormgatennetwerk van de bolRUIMTE lijkt nog iets anders te zitten.";
   }
   virtual std::string const helptext16() const override final {
-    return "It sends ripples through the fabric of sphereSPACE itself.  It is the source.";
+    return "Het zorgt voor golven in het weefsel van de bolRUIMTE zelf. Het is de bron.";
   }
   virtual std::string const helptext17() const override final {
-    return "It's what brought you here.";
+    return "Dit is de reden waarom je hier bent.";
   }
   virtual std::string const helptext18() const override final {
-    return "You are drawn to it.  You were created to investigate it.";
+    return "Het trekt je aan.  Je bent gemaakt om het uit te zoeken.";
   }
   virtual std::string const helptext19() const override final {
-    return "You don't know why yet.";
+    return "Waarom? Je weet het nog niet...";
   }
   virtual std::string const abouttext(std::string const &version, std::string const &git_version, std::string const &compileinfo, std::string const &current_year) const override final {
     /// Context: "about" menu
     std::stringstream ss;
     ss << "sphereFACE" "\n"
-          "by" "\n"
+          "door" "\n"
           "VoxelStorm" "\n\n" <<
-          "Version " << version << "\n" <<
-          "Revision " << git_version << "\n\n" <<
+          "Versie " << version << "\n" <<
+          "Revisie " << git_version << "\n\n" <<
           compileinfo << "\n\n" <<
           "© 2014-" << current_year << "\n" <<
           "VoxelStorm.com";
@@ -213,23 +213,23 @@ public:
   virtual std::string const version(std::string const &version_string) const override final {
     /// Context: Under the main title
     std::stringstream ss;
-    ss << "Version " << version_string;
+    ss << "Versie " << version_string;
     return ss.str();
   }
   virtual std::string const aboutlink_devblog() const override final {
-    return "About sphereFACE & dev blog";
+    return "Over sphereFACE & dev blog";
   }
   virtual std::string const aboutlink_wiki() const override final {
     return "sphereFACE wiki";
   }
   virtual std::string const aboutlink_officialsite() const override final {
-    return "Official website";
+    return "Officiele website";
   }
   virtual std::string const aboutlink_moregames() const override final {
-    return "More VoxelStorm games";
+    return "Meer spellen van VoxelStorm";
   }
   virtual std::string const aboutlink_review() const override final {
-    return "Write a review on Steam";
+    return "Schrijf een review op Steam";
   }
   virtual std::string const aboutlink_twitter() const override final {
     return "Twitter";
@@ -266,40 +266,40 @@ public:
   virtual std::string const mute_when_paused_enabled(bool enabled) const override final {
     /// Context: options menu: setting for whether to silence the music and sounds when the player pauses the game
     if(enabled) {
-      return "Mute when paused: enabled";
+      return "Geluid tijdens pauzeren: nee";
     } else {
-      return "Mute when paused: disabled";
+      return "Geluid tijdens pauzeren: ja";
     }
   }
   virtual std::string const save_log_to_file_enabled(bool enabled) const override final {
     /// Context: options menu: setting for whether to save the game log to a file
     if(enabled) {
-      return "Save log to file: enabled";
+      return "Schrijf log naar bestand: aan";
     } else {
-      return "Save log to file: disabled";
+      return "Schrijf log naar bestand: uit";
     }
   }
   virtual std::string const select_audio_device() const override final {
     /// Context: options menu: sound device selection menu
-    return "Select audio output device";
+    return "Selecteer geluidsapparaat";
   }
   virtual std::string const currently_selected_audio_device(std::string const &device_name) const override final {
     /// Context: options menu: what sound device is currently selected
     std::stringstream ss;
-    ss << "Selected: " << device_name;
+    ss << "Geselecteerd: " << device_name;
     return ss.str();
   }
   virtual std::string const play_test_sound() const override final {
     /// Context: options menu: sound device selection menu
-    return "Play a test sound";
+    return "Speel testgeluid";
   }
   virtual std::string const is_default() const override final {
     /// Context: options menu: sound device selection menu
-    return " (default)";
+    return " (standaard)";
   }
   virtual std::string const graphics() const override final {
     /// Context: options menu: subtitle for the section
-    return "Graphics";
+    return "Grafische instellingen";
   }
   virtual std::string const fullscreen(bool fullscreen) const override final {
     /// Context: options menu: setting for whether to show the game in full-screen or windowed mode
@@ -329,15 +329,15 @@ public:
   }
   virtual std::string const vsync_default() const override final {
     /// Context: options menu: graphics setting for vertical sync (will usually translate as just "vsync")
-    return "VSync: System default";
+    return "VSync: Systeeminstelling";
   }
   virtual std::string const vsync_off() const override final {
     /// Context: options menu: graphics setting for vertical sync (will usually translate as just "vsync")
-    return "VSync: Off";
+    return "VSync: Uit";
   }
   virtual std::string const vsync_on() const override final {
     /// Context: options menu: graphics setting for vertical sync (will usually translate as just "vsync")
-    return "VSync: On";
+    return "VSync: Aan";
   }
   virtual std::string const fbo_enabled(bool enabled) const override final {
     /// Context: options menu: setting for whether to enable FBO (frame buffer object) rendering mode, FBO is a technical term that probably won't translate
@@ -542,7 +542,7 @@ public:
   }
   virtual std::string const weapon_burst_description() const override final {
     /// Context: weapon description
-    return "Dit laatste redmiddel loost brandstof en ontsteekt het vervolgens, resulterend in een explosie. Dit tweede wapen heeft niet zo'n groot bereik, maar kan gebruikt worden zonder het primaire wapen te hoeven schakelen. Upgraden verhoogt het bereik en de schade.";
+    return "Dit laatste redmiddel loost brandstof en ontsteekt het vervolgens, met een explosie als gevolg. Dit tweede wapen heeft niet zo'n groot bereik, maar kan gebruikt worden zonder het primaire wapen te hoeven schakelen. Upgraden verhoogt het bereik en de schade.";
   }
   virtual std::string const weapon_enemy_launcher_name() const override final {
     /// Context: weapon name
@@ -624,15 +624,15 @@ public:
   }
   virtual std::string const weapon_speedspreadgun_name() const override final {
     /// Context: weapon name
-    return "snelheidsbreedteWAPEN";
+    return "lijnspreidKANON";
   }
   virtual std::string const weapon_speedspreadgun_description() const override final {
     /// Context: weapon description
-    return "Een automatisch kanon dat een  van granaten met verschillende snelheid afvuurt. Dit wapen is veelzijdig genoeg om als zowel breedtewapen en geconcentreerd wapen te gebruiken, en kan worden geupgraded om de hoeveelheid granaten en het snelheidsbereik te vergroten.";
+    return "Een automatisch kanon dat een reeks granaten met verschillende snelheid afvuurt. Dit wapen is veelzijdig genoeg om als zowel breedtewapen en geconcentreerd wapen te gebruiken, en kan worden geupgraded om de hoeveelheid granaten en het snelheidsbereik te vergroten.";
   }
   virtual std::string const weapon_spreadgun_name() const override final {
     /// Context: weapon name
-    return "breedteWAPEN";
+    return "waaierKANON";
   }
   virtual std::string const weapon_spreadgun_description() const override final {
     /// Context: weapon description
@@ -663,7 +663,7 @@ public:
   }
   virtual std::string const ships_log_picked_up() const override final {
     /// Context: Announcement that the player has picked up a ship's log
-    return "shipsLOG added to inventory";
+    return "scheepsJOURNAAL opgepakt";
   }
   virtual std::string const carrier_destroyed() const override final {
     /// Context: announcement that the enemy boss has been killed
