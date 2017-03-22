@@ -98,7 +98,7 @@ public:
   }
   virtual std::string const game_log() const override final {
     /// Context: menu option: open game log screen
-    return "Event Log";
+    return "Logboek";
   }
   virtual std::string const controls() const override final {
     /// Context: menu option: open game input control configuration menu
@@ -114,29 +114,29 @@ public:
   }
   virtual std::string const update_available() const override final {
     /// Context: menu option: title that appears when an updated version is available
-    return "Update available!";
+    return "Update beschikbaar!";
   }
   virtual std::string const download_latest_version() const override final {
     /// Context: menu option: button that appears when an updated version is available
-    return "Download latest version";
+    return "Download nieuwste versie";
   }
   virtual std::string const unable_to_check_latest_version() const override final {
     /// Context: menu option: about menu, version information, when the game can't connect to the update server
-    return "Unable to check latest version online";
+    return "Kan de versie-informatie niet ophalen";
   }
   virtual std::string const version_is_up_to_date() const override final {
     /// Context: menu option: about menu, version information, when this version is the latest available online
-    return "This version is confirmed up to date";
+    return "Deze versie is het meest recent";
   }
   virtual std::string const version_is_outdated(std::string const &new_version) const override final {
     /// Context: menu option: about menu, version information - button that can be pressed to open the game download page
     std::stringstream ss;
-    ss << "This version is outdated - download " << new_version;
+    ss << "Deze versie is verouderd - download " << new_version;
     return ss.str();
   }
   virtual std::string const help_controls() const override final {
     /// Context: help window: block of help text
-    return "BASIC CONTROLS";
+    return "BASISBESTURING";
   }
   virtual std::string const helptext01() const override final {
     /// Context: help window: block of help text
@@ -223,13 +223,13 @@ public:
     return "sphereFACE wiki";
   }
   virtual std::string const aboutlink_officialsite() const override final {
-    return "Officiele website";
+    return "Officiële website";
   }
   virtual std::string const aboutlink_moregames() const override final {
     return "Meer spellen van VoxelStorm";
   }
   virtual std::string const aboutlink_review() const override final {
-    return "Schrijf een review op Steam";
+    return "Schrijf een recensie op Steam";
   }
   virtual std::string const aboutlink_twitter() const override final {
     return "Twitter";
@@ -365,7 +365,7 @@ public:
   }
   virtual std::string const input() const override final {
     /// Context: options menu: subtitle for the section
-    return "Input";
+    return "Invoer";
   }
   virtual std::string const mouse_sensitivity(float sensitivity) const override final {
     /// Context: options menu: setting for the current mouse movement speed for looking around
@@ -477,7 +477,7 @@ public:
   }
   virtual std::string const jettison() const override final {
     /// Context: button to drop inventory items
-    return "Lozen";
+    return "Dumpen";
   }
   virtual std::string const delete_option() const override final {
     /// Context: control configuration menu, delete a control profile
@@ -655,7 +655,7 @@ public:
     /// Context: announcement of a weapon being upgraded to a new level
     /// note: level is passed in as a roman numeral
     std::stringstream ss;
-    ss << name << " geupgraded: level " << level;
+    ss << name << " geupgrade: level " << level;
     return ss.str();
   }
   virtual std::string const reverse_thruster_picked_up() const override final {
@@ -723,7 +723,7 @@ public:
   virtual std::string const cleared_sphere(std::string const new_sphere) const override final {
     /// Context: announcement, the name of the sphere we've entered
     std::stringstream ss;
-    ss << "Cleared " << new_sphere;
+    ss << "Gesaneerd: " << new_sphere;
     return ss.str();
   }
   virtual std::string const now_playing_track(std::string const music_track) const override final {
