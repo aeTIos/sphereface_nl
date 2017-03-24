@@ -88,6 +88,10 @@ public:
     /// Context: menu option: open options / settings menu
     return "Opties";
   }
+  virtual std::string const language() const override final {
+    /// Context: menu option: language selection menu title
+    return "Taal";
+  }
   virtual std::string const inventory() const override final {
     /// Context: menu option: open inventory screen
     return "Inventaris";
@@ -104,10 +108,10 @@ public:
     /// Context: menu option: open game input control configuration menu
     return "Besturing";
   }
-  virtual std::string const help() const override final {
-    /// Context: menu option: open the help window
-    return "Help";
-  }
+  //virtual std::string const help() const override final {
+  //  /// Context: menu option: open the help window
+  //  return "Help";
+  //}
   virtual std::string const about() const override final {
     /// Context: menu option: open the about-this-game window
     return "Over";
@@ -150,7 +154,7 @@ public:
   }
   virtual std::string const helptext04() const override final {
     return "Groene dingen zijn meestal goed - pak die op." "\n\n"
-    "Rode dingen zijn meestal fout - vermijd die.";
+           "Rode dingen zijn meestal fout - vermijd die.";
   }
   virtual std::string const helptext05() const override final {
     return "Witte dingen zijn neutraal, maar probeer botsingen zoveel mogelijk te voorkomen.";
@@ -219,9 +223,9 @@ public:
   virtual std::string const aboutlink_devblog() const override final {
     return "Over sphereFACE & dev blog";
   }
-  virtual std::string const aboutlink_wiki() const override final {
-    return "sphereFACE wiki";
-  }
+  //virtual std::string const aboutlink_wiki() const override final {
+  //  return "sphereFACE wiki";
+  //}
   virtual std::string const aboutlink_officialsite() const override final {
     return "Officiële website";
   }
@@ -231,18 +235,18 @@ public:
   virtual std::string const aboutlink_review() const override final {
     return "Schrijf een recensie op Steam";
   }
-  virtual std::string const aboutlink_twitter() const override final {
-    return "Twitter";
-  }
-  virtual std::string const aboutlink_facebook() const override final {
-    return "Facebook";
-  }
-  virtual std::string const aboutlink_gplus() const override final {
-    return "Google+";
-  }
-  virtual std::string const aboutlink_youtube() const override final {
-    return "YouTube";
-  }
+  //virtual std::string const aboutlink_twitter() const override final {
+  //  return "Twitter";
+  //}
+  //virtual std::string const aboutlink_facebook() const override final {
+  //  return "Facebook";
+  //}
+  //virtual std::string const aboutlink_gplus() const override final {
+  //  return "Google+";
+  //}
+  //virtual std::string const aboutlink_youtube() const override final {
+  //  return "YouTube";
+  //}
   virtual std::string const sound() const override final {
     /// Context: options menu: subtitle for the section
     return "Geluid";
@@ -520,10 +524,10 @@ public:
     /// Context: weapon list title
     return "Wapens";
   }
-  virtual std::string const upgrades() const override final {
-    /// Context: upgrade list title
-    return "Upgrades";
-  }
+  //virtual std::string const upgrades() const override final {
+  //  /// Context: upgrade list title
+  //  return "Upgrades";
+  //}
   virtual std::string const ships_logs() const override final {
     /// Context: ships log list
     return "scheepsJOURNAALS";
@@ -675,24 +679,24 @@ public:
     ss << value << "% vernietigd";
     return ss.str();
   }
-  virtual std::string const plus(int value) const override final {
-    /// Context: anywhere an increment of a number needs to be shown (i.e. score increase)
-    std::stringstream ss;
-    ss << "+" << value;
-    return ss.str();
-  }
-  virtual std::string const minus(int value) const override final {
-    /// Context: anywhere an decrement of a number needs to be shown (i.e. score decrease)
-    std::stringstream ss;
-    ss << "-" << value;
-    return ss.str();
-  }
-  virtual std::string const percent(int value) const override final {
-    /// Context: anywhere a number needs to be shown as a percentage
-    std::stringstream ss;
-    ss << value << "%";
-    return ss.str();
-  }
+  //virtual std::string const plus(int value) const override final {
+  //  /// Context: anywhere an increment of a number needs to be shown (i.e. score increase)
+  //  std::stringstream ss;
+  //  ss << "+" << value;
+  //  return ss.str();
+  //}
+  //virtual std::string const minus(int value) const override final {
+  //  /// Context: anywhere an decrement of a number needs to be shown (i.e. score decrease)
+  //  std::stringstream ss;
+  //  ss << "-" << value;
+  //  return ss.str();
+  //}
+  //virtual std::string const percent(int value) const override final {
+  //  /// Context: anywhere a number needs to be shown as a percentage
+  //  std::stringstream ss;
+  //  ss << value << "%";
+  //  return ss.str();
+  //}
   virtual std::string const high_scores() const override final {
     /// Context: title of the high scores menu
     return "topSCORES";
@@ -784,12 +788,12 @@ public:
     ss << "Afstand: " << std::fixed << std::setprecision(2) << this_distance_from_ship << "lj van schip, " << std::fixed << std::setprecision(2) << this_distance_to_target << " tot doel"; // set_precision lets us choose the number of decimal places
     return ss.str();
   }
-  virtual std::string const name_multiple(std::string const &name, unsigned int number) const override final {
-    /// Context: sphere menu, modifies an existing name to add a multiplier
-    std::stringstream ss;
-    ss << name << " x" << number;
-    return ss.str();
-  }
+  //virtual std::string const name_multiple(std::string const &name, unsigned int number) const override final {
+  //  /// Context: sphere menu, modifies an existing name to add a multiplier
+  //  std::stringstream ss;
+  //  ss << name << " x" << number;
+  //  return ss.str();
+  //}
   virtual std::string const name_debris(float mass) const override final {
     /// Context: sphere menu, describes a piece of asteroid debris
     std::stringstream ss;
@@ -1258,7 +1262,6 @@ public:
     ss << "Omgeschakeld naar / van: " << number_from << "x / " << number_to << "x";
     return ss.str();
   }
-
   virtual std::string const ships_log_scout1_title() const override final {
     return "SSC Coriolanus Bemanningsrapport";
   }
@@ -1304,12 +1307,12 @@ public:
     return "IJN Sazanami Berichtenlogboek";
   }
   virtual std::string const ships_log_contact3_content() const override final {
-  return "Schip: IJN Sazanami" "\n"
-  "Bestandstype: Calamiteitsbericht" "\n"
-  "Ontvangen van: IJN Kirishima" "\n"
-  "Afzender: Kaptitein Hikaru Kayden" "\n"
-  "\n"
-  "Nadat we onze koers hebben verlegd konden we gelukkig een groot deel van het bericht ontvangen. Ziet er niet zo rooskleurig uit: het lijkt erop dat de communicatieofficier een noodprotocol had ingesteld waardoor in noodgevallen alle data van het schip verstuurd zou worden. Wij hebben dus de sensordata van net voor de noodtransmissie opgepikt, en zijn nu aan het onderzoeken of we een aanwijzing kunnen vinden voor wat er met precies gebeurd is. Tot nu toe lijkt het erop dat ze een wrak van een van onze verdwenen onderzoeksschepen aan het onderzoeken waren. Het schip was in slechte staat, maar het vreemde was dat er blijkbaar helemaal geen organisch materiaal aan boord was. Alles wat ook maar koolstof bevatte was foetsie. Voedselvoorraden, brandstof, zelfs de op koolstof gebaseerde plastics aan boord was verdwenen. Het hoeft niet gezegd te worden dat er van de bemanning geen spoor was. Ik denk dat we onze koers gaan verleggen naar het sectorcommando; deze zaak moet door een paar militaire schepen worden opgepakt.";
+    return "Schip: IJN Sazanami" "\n"
+    "Bestandstype: Calamiteitsbericht" "\n"
+    "Ontvangen van: IJN Kirishima" "\n"
+    "Afzender: Kaptitein Hikaru Kayden" "\n"
+    "\n"
+    "Nadat we onze koers hebben verlegd konden we gelukkig een groot deel van het bericht ontvangen. Ziet er niet zo rooskleurig uit: het lijkt erop dat de communicatieofficier een noodprotocol had ingesteld waardoor in noodgevallen alle data van het schip verstuurd zou worden. Wij hebben dus de sensordata van net voor de noodtransmissie opgepikt, en zijn nu aan het onderzoeken of we een aanwijzing kunnen vinden voor wat er met precies gebeurd is. Tot nu toe lijkt het erop dat ze een wrak van een van onze verdwenen onderzoeksschepen aan het onderzoeken waren. Het schip was in slechte staat, maar het vreemde was dat er blijkbaar helemaal geen organisch materiaal aan boord was. Alles wat ook maar koolstof bevatte was foetsie. Voedselvoorraden, brandstof, zelfs de op koolstof gebaseerde plastics aan boord was verdwenen. Het hoeft niet gezegd te worden dat er van de bemanning geen spoor was. Ik denk dat we onze koers gaan verleggen naar het sectorcommando; deze zaak moet door een paar militaire schepen worden opgepakt.";
   }
   virtual std::string const ships_log_witness1_title() const override final {
     return "USS Hermes Kapiteinslogboek";
