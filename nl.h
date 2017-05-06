@@ -1270,7 +1270,7 @@ public:
     "Bemanningslid: Peyton Ateshga, onderhoudstechnicus" "\n"
     "Bestandstype: Persoonlijk dagboek" "\n"
     "\n"
-    "Ik probeer een beetje bij te houden wat er allemaal aan het thuisfront gebeurt. Op deze lange verkenningsmissies krijg ik gelukkig nog steeds mijn exemplaar van het Zetronym Wetenschapsjournaal. Volgens mij gaat alles wel zo'n beetje zijn gangetje. Onderzoekers van het Cybria-instituut bestuderen de energiecapaciteit van wormholes. Het schijnt dat een gedeelte van de voorheen toch best stabiele buitenbanden is ingezakt, naar men zegt vanwege 'enkele grote energiefluctutaties'. Gelukkig is er daar weinig wat buitengesloten kan raken, maar ik vind het nog steeds een beetje een eng idee. Ik kan me niet voorstellen hoe het moet zijn om daar vast te zitten... nou ja, voor altijd.";
+    "Ik probeer een beetje bij te houden wat er allemaal aan het thuisfront gebeurt. Op deze lange verkenningsmissies krijg ik gelukkig nog steeds mijn exemplaar van het Zetronym Wetenschapsjournaal. Volgens mij gaat alles wel zo'n beetje zijn gangetje. Onderzoekers van het Cybria-instituut bestuderen de energiecapaciteit van wormholes. Het schijnt dat een gedeelte van de voorheen toch best stabiele buitenbanden is ingezakt, naar men zegt vanwege 'enkele grote energiefluctuaties'. Gelukkig is er daar weinig wat buitengesloten kan raken, maar ik vind het nog steeds een beetje een eng idee. Ik kan me niet voorstellen hoe het moet zijn om daar vast te zitten... nou ja, voor altijd.";
   }
   virtual std::string const ships_log_scout2_title() const override final {
     return "RV Daedalus Bemanningsrapport";
@@ -1310,7 +1310,7 @@ public:
     return "Schip: IJN Sazanami" "\n"
     "Bestandstype: Calamiteitsbericht" "\n"
     "Ontvangen van: IJN Kirishima" "\n"
-    "Afzender: Kaptitein Hikaru Kayden" "\n"
+    "Afzender: Kapitein Hikaru Kayden" "\n"
     "\n"
     "Nadat we onze koers hebben verlegd konden we gelukkig een groot deel van het bericht ontvangen. Ziet er niet zo rooskleurig uit: het lijkt erop dat de communicatieofficier een noodprotocol had ingesteld waardoor in noodgevallen alle data van het schip verstuurd zou worden. Wij hebben dus de sensordata van net voor de noodtransmissie opgepikt, en zijn nu aan het onderzoeken of we een aanwijzing kunnen vinden voor wat er met precies gebeurd is. Tot nu toe lijkt het erop dat ze een wrak van een van onze verdwenen onderzoeksschepen aan het onderzoeken waren. Het schip was in slechte staat, maar het vreemde was dat er blijkbaar helemaal geen organisch materiaal aan boord was. Alles wat ook maar koolstof bevatte was foetsie. Voedselvoorraden, brandstof, zelfs de op koolstof gebaseerde plastics aan boord was verdwenen. Het hoeft niet gezegd te worden dat er van de bemanning geen spoor was. Ik denk dat we onze koers gaan verleggen naar het sectorcommando; deze zaak moet door een paar militaire schepen worden opgepakt.";
   }
@@ -1322,17 +1322,17 @@ public:
     "Bemanningslid: Kapitein Tracer Harvey" "\n"
     "Bestandstype: Kapteinslogboek" "\n"
     "\n"
-    "Hoe rapporteer ik dit precies? Ik geloof dat we zojuist contact hadden met een buitenaardse niet-menselijke leefvorm. In ieder geval bewoog het uit zichzelf. Ook reageerde het beslist op onze aanwezigheid... en we waren niet welkom, mag ik wel zeggen. We waren met onze gebruikelijke patrouille bezig toen 'het', wat het ook moge zijn, opeens achter een asteroide vandaan kwam. Toen we het zagen, was het de asteroide aan het aftasten, maar we kregen al gauw de volle laag  van wat gereedschap of wapens was. Het is een wonder dat we niet geraakt zijn. We gaan nu terug naar het sectorcommando om dit incident te rapporteren.";
+    "Hoe rapporteer ik dit precies? Ik geloof dat we zojuist contact hadden met een buitenaards wezen. Wat het ook zij, het bewoog en reageerde beslist op onze aanwezigheid... en we waren niet welkom, mag ik wel zeggen. We waren met onze gebruikelijke patrouille bezig toen 'het', wat het ook moge zijn, opeens achter een asteroide vandaan kwam. Toen we het zagen, was het de asteroide aan het aftasten, maar we kregen al gauw de volle laag  van wat gereedschap of wapens was. Het is een wonder dat we niet geraakt zijn. We gaan nu terug naar het sectorcommando om dit incident te rapporteren.";
   }
   virtual std::string const ships_log_rumours1_title() const override final {
-    return "PB Menenius Captain's Log";
+    return "PB Menenius Kapiteinslogboek";
   }
   virtual std::string const ships_log_rumours1_content() const override final {
-    return "Vessel: PB Menenius" "\n"
-    "Crew Member: Captain Nikopol Reika" "\n"
-    "File type: Captain's log" "\n"
+    return "Schip: PB Menenius" "\n"
+    "Bemanningslid: Kapitein Nikopol Reika" "\n"
+    "Bestandstype: Kapiteinslogboek" "\n"
     "\n"
-    "All this talk going around about sector command gathering a fleet to investigate rumours of non-human life. Don't know about any of that. They still have me on patrol, keeping an eye out for pirates. A lot of activity in this area recently, ships being found blasted to bits all over the sector. Ask me, probably some wannabe big time space corsair trying to come in hard. Only gonna draw serious attention and get shut down, just like all these 'loud' fliers do.";
+    "Ik heb eigenlijk helemaal niets gehoord over de nieuwe vloot die het sectorcommando aan het samenstellen zou zijn. Iets over een onderzoek betreffend mogelijk leven? Ik draai nog steeds gewoon dezelfde patrouilleroute, er moet tenslotte ook op de piraten gelet worden. Het is wel druk in onze omgeving de laatste tijd. Verspreid over de hele sector worden er schepen gevonden die aan gruis geschoten zijn. Volgens mij gewoon een stel ruimterovers die stoer proberen te doen. Het enige wat ze voor elkaar gaan krijgen is een hoop aandacht trekken voordat ze worden opgepakt, net als de rest van die herrieschoppers.";
   }
   virtual std::string const ships_log_rumours2_title() const override final {
     return "DKM Alberich Officer's Log";
