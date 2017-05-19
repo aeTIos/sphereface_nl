@@ -1,0 +1,40 @@
+[i]sphereFACE is een 3D vector shooter in retrostijl, op de binnenzijde van een bol.[/i]
+
+Langzaam, voorzichtig scherpschieten, afgewisseld door momenten van paniek terwijl je alles doet om de rotsen te ontwijken - verken ondertussen het grote hyperspace netwerk en ontdek nieuwe dingen maar pas op, doodgaan betekent opnieuw beginnen...
+
+[h2]GAMEPLAY[/h2]
+[list]
+[*]Vernietig de "asteroïden" in elke bol om de hyperspaceportalen die naar andere bollen leiden te openen, en navigeer door een enorme, steeds veranderende 3D-ruimte, en vind dat wat je uit je diepe slaap heeft ontwaakt...
+[*]Ga de uitdaging aan om het vliegen aan de binnenkant van de bol onder de knie te krijgen - behendigheid, alertheid en goede reflexen zijn nodig om te overleven.
+[*]Kijk in het rond in de bol met muis, controller, een toetsenbord, of zelfs met een VR headset.
+[*]Net als in roguelikes kun je maar één keer opslaan - doodgaan betekent overnieuw beginnen!
+[*]Een duister en verrassend science-fictionverhaal
+[*]Een top-10 highscoresysteem in arcadestijl.
+[*]Kies zelf je moeilijkheidsgraad - ga je langzaam maar zeker verder of storm je al schietend de levels door?
+[*]Pas op. Ga je te diep het hyperspace netwerk in, dan zal het niet lang zijn voor je iets vindt dat terugschiet...
+[/list]
+
+[h2]WAPENS & POWERUPS[/h2]
+[list]
+[*]Verzamel en verbeter een groot arsenaal van ongebruikelijke, sterke wapens zoals het waaierKANON, het gaussGEWEER, geleideRAKETTEN, ruimteMIJNEN, de vlammenWERPER, het singulariteitsKANON en meer.
+[*]Schiet "vijandelijke" schepen kapot en pik hun "powerups" om je wapens te verbeteren. Dat is wat het is, toch..?
+[*]Maak schilden van vermalen asteroïdes en verbeter je manoeuvreerbaarheid met o.a. de retroRAKETTEN.
+[*]Ieder wapen heeft zijn eigen strategie en leercurve, maar de echte sphereFACE-meester moet leren om de wapens in harmonie met elkaar te gebruiken.
+[/list]
+
+[h2]MUZIEK[/h2]
+[list]
+[*]De muziek in sphereFACE is gemaakt door vijf artiesten uit de hele wereld en bevat ambient electronica gemengd met deep techno en een vleugje chiptune.
+[/list]
+
+[h2]TECHNISCH[/h2]
+[list]
+[*]De engine van het spel is een eigen product, waardoor sphereFACE precies dat kan bieden wat het nodig heeft, zonder limieten. Het spel is ook zo gemaakt dat het geen zware pc nodig heeft - en dus zelfs op die oude laptop draait.
+[*]De besturing van het spel is volledig aan te passen - zet elke actie op elke toets, knop, stick, joystick, of zelfs voetpedaal; iedere combinatie van apparaten kan gebruikt worden om het spel te besturen.
+[*]Thema's - ontwerp en deel een aangepast uiterlijk voor het spel.
+[*]Updates voor Linux, MacOS en Windows komen tegelijkertijd uit. 
+[*]Het spel is klaar, maar nog niet af - nieuwe updates en verbeteringen zullen steeds worden uitgebracht door ons professionele en snel reagerend ontwikkelteam.
+[/list]
+
+
+
